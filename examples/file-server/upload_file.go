@@ -7,8 +7,8 @@ import (
 	"os"
 
 	"github.com/go-openapi/runtime"
-	"github.com/go-swagger/go-swagger/examples/file-server/client"
-	"github.com/go-swagger/go-swagger/examples/file-server/client/uploads"
+	"github.com/ssfilatov/go-swagger/examples/file-server/client"
+	"github.com/ssfilatov/go-swagger/examples/file-server/client/uploads"
 )
 
 func main() {

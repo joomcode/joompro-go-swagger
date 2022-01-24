@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/go-swagger/go-swagger/examples/external-types/models"
+	"github.com/ssfilatov/go-swagger/examples/external-types/models"
 )
 
 /*GetTestDefault A reference to a type already defined in the models package

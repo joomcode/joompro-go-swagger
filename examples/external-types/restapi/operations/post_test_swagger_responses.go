@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	custom "github.com/go-swagger/go-swagger/examples/external-types/fred"
+	custom "github.com/ssfilatov/go-swagger/examples/external-types/fred"
 )
 
 /*PostTestDefault An inlined reference to an aliased external package.

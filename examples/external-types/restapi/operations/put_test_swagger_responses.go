@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	custom "github.com/go-swagger/go-swagger/examples/external-types/fred"
+	custom "github.com/ssfilatov/go-swagger/examples/external-types/fred"
 )
 
 /*PutTestDefault A map of an aliased external package. Now the alias is "custom".

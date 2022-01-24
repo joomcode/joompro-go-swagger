@@ -87,7 +87,7 @@ func makeClient(cmd *cobra.Command, args []string) (*client.{{ pascalize .Name }
 // MakeRootCmd returns the root cmd
 func MakeRootCmd() (*cobra.Command, error) {
 	cobra.OnInitialize(initViperConfigs)
-	
+
 	// Use executable name as the command name
 	rootCmd := &cobra.Command{
 		Use: exeName,
@@ -153,7 +153,7 @@ func initViperConfigs() {
 }
 
 {{- if .SecurityDefinitions }}
-{{- /*youyuan: rework this since spec may define multiple auth schemes. 
+{{- /*youyuan: rework this since spec may define multiple auth schemes.
 	cli needs to detect which one user passed rather than add all of them.*/}}
 // registerAuthInoWriterFlags registers all flags needed to perform authentication
 func registerAuthInoWriterFlags(cmd *cobra.Command) error {
@@ -201,8 +201,8 @@ func makeAuthInfoWriter(cmd *cobra.Command) (runtime.ClientAuthInfoWriter, error
 	{{- end }}
 	{{- if .IsOAuth2 }}
 	if viper.IsSet("oauth2-token") {
-		// oauth2 workflow for generated CLI is not ideal. 
-		// If you have suggestions on how to support it, raise an issue here: https://github.com/go-swagger/go-swagger/issues
+		// oauth2 workflow for generated CLI is not ideal.
+		// If you have suggestions on how to support it, raise an issue here: https://github.com/ssfilatov/go-swagger/issues
 		// This will be added to header: "Authorization: Bearer {oauth2-token value}"
 		token := viper.GetString("oauth2-token")
 		auths = append(auths, httptransport.BearerToken(token))
