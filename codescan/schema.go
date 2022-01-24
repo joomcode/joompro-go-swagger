@@ -754,7 +754,16 @@ func (s *schemaBuilder) buildFromStruct(decl *entityDecl, st *types.Struct, sche
 			continue
 		}
 		if !omitempty {
-			tgt.Required = append(tgt.Required, name)
+			var found bool
+			for j := 0; j < len(tgt.Required); j++ {
+				if tgt.Required[j] == name {
+					found = true
+					break
+				}
+			}
+			if !found {
+				tgt.Required = append(tgt.Required, name)
+			}
 		}
 
 		ps := tgt.Properties[name]
