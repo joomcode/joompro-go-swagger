@@ -8,8 +8,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/go-swagger/go-swagger/cmd/swagger/commands/generate"
 	flags "github.com/jessevdk/go-flags"
+	"github.com/ssfilatov/go-swagger/cmd/swagger/commands/generate"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )
