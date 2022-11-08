@@ -9,9 +9,9 @@ import (
 
 	"github.com/go-openapi/analysis"
 	"github.com/go-openapi/swag"
-	"github.com/go-swagger/go-swagger/generator"
 	flags "github.com/jessevdk/go-flags"
 	"github.com/spf13/viper"
+	"github.com/ssfilatov/go-swagger/generator"
 )
 
 // FlattenCmdOptions determines options to the flatten spec preprocessing

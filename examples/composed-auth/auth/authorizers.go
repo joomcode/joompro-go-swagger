@@ -5,8 +5,8 @@ import (
 	"os"
 
 	errors "github.com/go-openapi/errors"
-	models "github.com/go-swagger/go-swagger/examples/composed-auth/models"
 	jwt "github.com/golang-jwt/jwt"
+	models "github.com/ssfilatov/go-swagger/examples/composed-auth/models"
 )
 
 const (

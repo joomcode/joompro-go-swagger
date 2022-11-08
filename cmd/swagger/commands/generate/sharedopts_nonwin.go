@@ -4,8 +4,8 @@
 package generate
 
 import (
-	"github.com/go-swagger/go-swagger/generator"
 	"github.com/jessevdk/go-flags"
+	"github.com/ssfilatov/go-swagger/generator"
 )
 
 type sharedOptions struct {
