@@ -799,6 +799,13 @@ func (s *schemaBuilder) buildFromStruct(decl *entityDecl, st *types.Struct, sche
 		tg := st.Tag(i)
 
 		if fld.Embedded() {
+			// makeRef is called via this hack
+			if len(schema.AllOf) != 0 {
+				ps := tgt.Properties[""]
+				if err := s.buildFromType(fld.Type(), schemaTypable{&ps, 0}); err != nil {
+					return err
+				}
+			}
 			continue
 		}
 
