@@ -13,8 +13,8 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 	"github.com/go-openapi/validate"
-	"github.com/ssfilatov/go-swagger/examples/external-types/fred"
-	custom "github.com/ssfilatov/go-swagger/examples/external-types/fred"
+	"github.com/joomcode/joompro-go-swagger/examples/external-types/fred"
+	custom "github.com/joomcode/joompro-go-swagger/examples/external-types/fred"
 )
 
 // Zzz This demonstrates variations in generated code, depending on how properties are declared.

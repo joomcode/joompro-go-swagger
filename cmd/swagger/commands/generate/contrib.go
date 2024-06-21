@@ -1,7 +1,7 @@
 package generate
 
 import (
-	"github.com/ssfilatov/go-swagger/generator"
+	"github.com/joomcode/joompro-go-swagger/generator"
 )
 
 // contribOptionsOverride gives contributed templates the ability to override the options if they need

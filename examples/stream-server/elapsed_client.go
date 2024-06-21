@@ -16,9 +16,9 @@ import (
 	"github.com/go-openapi/runtime"
 	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/swag"
-	"github.com/ssfilatov/go-swagger/examples/stream-server/client"
-	"github.com/ssfilatov/go-swagger/examples/stream-server/client/operations"
-	"github.com/ssfilatov/go-swagger/examples/stream-server/models"
+	"github.com/joomcode/joompro-go-swagger/examples/stream-server/client"
+	"github.com/joomcode/joompro-go-swagger/examples/stream-server/client/operations"
+	"github.com/joomcode/joompro-go-swagger/examples/stream-server/models"
 )
 
 func main() {

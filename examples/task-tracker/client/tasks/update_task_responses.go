@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/ssfilatov/go-swagger/examples/task-tracker/models"
+	"github.com/joomcode/joompro-go-swagger/examples/task-tracker/models"
 )
 
 // UpdateTaskReader is a Reader for the UpdateTask structure.

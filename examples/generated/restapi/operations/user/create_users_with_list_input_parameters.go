@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/ssfilatov/go-swagger/examples/generated/models"
+	"github.com/joomcode/joompro-go-swagger/examples/generated/models"
 )
 
 // NewCreateUsersWithListInputParams creates a new CreateUsersWithListInputParams object

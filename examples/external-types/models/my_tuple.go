@@ -15,7 +15,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 	"github.com/go-openapi/validate"
-	"github.com/ssfilatov/go-swagger/examples/external-types/fred"
+	"github.com/joomcode/joompro-go-swagger/examples/external-types/fred"
 )
 
 // MyTuple Demonstrates references to some external type in the context of a tuple.

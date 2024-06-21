@@ -3,7 +3,7 @@
   "plugins": [ "forkmegithub", "prism", "-highlight", "anchors" ],
   "pluginsConfig": {
     "forkmegithub": {
-      "url": "https://github.com/ssfilatov/go-swagger",
+      "url": "https://github.com/joomcode/joompro-go-swagger",
       "color": "green"
     }
   }

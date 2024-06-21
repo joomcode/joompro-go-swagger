@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/ssfilatov/go-swagger/examples/composed-auth/models"
+	"github.com/joomcode/joompro-go-swagger/examples/composed-auth/models"
 )
 
 // GetAccountOKCode is the HTTP code returned for type GetAccountOK

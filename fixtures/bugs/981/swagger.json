@@ -27,7 +27,7 @@
           "x-go-name": "Type"
         }
       },
-      "x-go-package": "github.com/ssfilatov/go-swagger/fixtures/bugs/981"
+      "x-go-package": "github.com/joomcode/joompro-go-swagger/fixtures/bugs/981"
     }
   }
 }

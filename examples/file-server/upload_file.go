@@ -8,8 +8,8 @@ import (
 	"os"
 
 	"github.com/go-openapi/runtime"
-	"github.com/ssfilatov/go-swagger/examples/file-server/client"
-	"github.com/ssfilatov/go-swagger/examples/file-server/client/uploads"
+	"github.com/joomcode/joompro-go-swagger/examples/file-server/client"
+	"github.com/joomcode/joompro-go-swagger/examples/file-server/client/uploads"
 )
 
 func main() {

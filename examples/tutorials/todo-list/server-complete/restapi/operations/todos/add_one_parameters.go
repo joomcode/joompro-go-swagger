@@ -14,7 +14,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/validate"
 
-	"github.com/ssfilatov/go-swagger/examples/tutorials/todo-list/server-complete/models"
+	"github.com/joomcode/joompro-go-swagger/examples/tutorials/todo-list/server-complete/models"
 )
 
 // NewAddOneParams creates a new AddOneParams object

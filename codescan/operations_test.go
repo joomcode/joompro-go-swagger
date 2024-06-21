@@ -17,10 +17,10 @@ func TestOperationsExpression(t *testing.T) {
 func TestOperationsParser(t *testing.T) {
 	sctx, err := newScanCtx(&Options{
 		Packages: []string{
-			"github.com/ssfilatov/go-swagger/fixtures/goparsing/classification",
-			"github.com/ssfilatov/go-swagger/fixtures/goparsing/classification/models",
-			"github.com/ssfilatov/go-swagger/fixtures/goparsing/classification/operations",
-			"github.com/ssfilatov/go-swagger/fixtures/goparsing/classification/operations_annotation",
+			"github.com/joomcode/joompro-go-swagger/fixtures/goparsing/classification",
+			"github.com/joomcode/joompro-go-swagger/fixtures/goparsing/classification/models",
+			"github.com/joomcode/joompro-go-swagger/fixtures/goparsing/classification/operations",
+			"github.com/joomcode/joompro-go-swagger/fixtures/goparsing/classification/operations_annotation",
 		},
 	})
 	require.NoError(t, err)

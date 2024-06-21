@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/ssfilatov/go-swagger/examples/tutorials/todo-list/server-complete/models"
+	"github.com/joomcode/joompro-go-swagger/examples/tutorials/todo-list/server-complete/models"
 )
 
 // FindTodosOKCode is the HTTP code returned for type FindTodosOK

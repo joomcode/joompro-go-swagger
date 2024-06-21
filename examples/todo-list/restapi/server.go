@@ -24,7 +24,7 @@ import (
 	flag "github.com/spf13/pflag"
 	"golang.org/x/net/netutil"
 
-	"github.com/ssfilatov/go-swagger/examples/todo-list/restapi/operations"
+	"github.com/joomcode/joompro-go-swagger/examples/todo-list/restapi/operations"
 )
 
 const (

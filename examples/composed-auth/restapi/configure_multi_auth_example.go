@@ -12,10 +12,10 @@ import (
 	runtime "github.com/go-openapi/runtime"
 	middleware "github.com/go-openapi/runtime/middleware"
 
-	"github.com/ssfilatov/go-swagger/examples/composed-auth/restapi/operations"
+	"github.com/joomcode/joompro-go-swagger/examples/composed-auth/restapi/operations"
 
-	auth "github.com/ssfilatov/go-swagger/examples/composed-auth/auth"
-	models "github.com/ssfilatov/go-swagger/examples/composed-auth/models"
+	auth "github.com/joomcode/joompro-go-swagger/examples/composed-auth/auth"
+	models "github.com/joomcode/joompro-go-swagger/examples/composed-auth/models"
 )
 
 //go:generate swagger generate server --target .. --name multi-auth-example --spec ../swagger.yml --principal models.Principal

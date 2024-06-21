@@ -1,12 +1,12 @@
-# Swagger 2.0 [![Run CI](https://github.com/ssfilatov/go-swagger/actions/workflows/test.yaml/badge.svg)](https://github.com/ssfilatov/go-swagger/actions/workflows/test.yaml) [![codecov](https://codecov.io/gh/go-swagger/go-swagger/branch/master/graph/badge.svg)](https://codecov.io/gh/go-swagger/go-swagger) [![GitHub version](https://badge.fury.io/gh/go-swagger%2Fgo-swagger.svg)](https://badge.fury.io/gh/go-swagger%2Fgo-swagger)
+# Swagger 2.0 [![Run CI](https://github.com/joomcode/joompro-go-swagger/actions/workflows/test.yaml/badge.svg)](https://github.com/joomcode/joompro-go-swagger/actions/workflows/test.yaml) [![codecov](https://codecov.io/gh/go-swagger/go-swagger/branch/master/graph/badge.svg)](https://codecov.io/gh/go-swagger/go-swagger) [![GitHub version](https://badge.fury.io/gh/go-swagger%2Fgo-swagger.svg)](https://badge.fury.io/gh/go-swagger%2Fgo-swagger)
 
 [![Slack Status](https://slackin.goswagger.io/badge.svg)](https://slackin.goswagger.io)
 [![license](http://img.shields.io/badge/license-Apache%20v2-orange.svg)](https://raw.githubusercontent.com/swagger-api/swagger-spec/master/LICENSE)
-[![GoDoc](https://godoc.org/github.com/ssfilatov/go-swagger?status.svg)](http://godoc.org/github.com/ssfilatov/go-swagger)
+[![GoDoc](https://godoc.org/github.com/joomcode/joompro-go-swagger?status.svg)](http://godoc.org/github.com/joomcode/joompro-go-swagger)
 [![Docker Repository on Quay](https://quay.io/repository/goswagger/swagger/status "Docker Repository on Quay")](https://quay.io/repository/goswagger/swagger)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fgo-swagger%2Fgo-swagger.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fgo-swagger%2Fgo-swagger?ref=badge_shield)
-[![GolangCI](https://golangci.com/badges/github.com/ssfilatov/go-swagger.svg)](https://golangci.com)
-[![Go Report Card](https://goreportcard.com/badge/github.com/ssfilatov/go-swagger)](https://goreportcard.com/report/github.com/ssfilatov/go-swagger)
+[![GolangCI](https://golangci.com/badges/github.com/joomcode/joompro-go-swagger.svg)](https://golangci.com)
+[![Go Report Card](https://goreportcard.com/badge/github.com/joomcode/joompro-go-swagger)](https://goreportcard.com/report/github.com/joomcode/joompro-go-swagger)
 
 This package contains a golang implementation of Swagger 2.0 (aka [OpenAPI 2.0](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md)):
 it knows how to serialize and deserialize swagger specifications.
@@ -136,7 +136,7 @@ To generate a [client for a swagger spec](https://goswagger.io/generate/client.h
 swagger generate client [-f ./swagger.json] -A [application-name [--principal [principal-name]]
 ```
 ### Generate an CLI (Command line tool)
-To generate a [CLI for a swagger spec](https://github.com/ssfilatov/go-swagger/tree/master/examples/cli) document:
+To generate a [CLI for a swagger spec](https://github.com/joomcode/joompro-go-swagger/tree/master/examples/cli) document:
 ```
 swagger generate cli [-f ./swagger.json] -A [application-name [--principal [principal-name]]
 ```
@@ -192,7 +192,7 @@ swagger generate markdown -f {spec} --output swagger.mode
 
 Try `go-swagger` in a free online workspace using Gitpod:
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/ssfilatov/go-swagger)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/joomcode/joompro-go-swagger)
 
 ## Licensing
 
@@ -276,10 +276,10 @@ Spec flattening and $ref resolution brought breaking changes in model generation
 You will have to rename some imports:
 
 ```
-github.com/ssfilatov/go-swagger/httpkit/validate to github.com/go-openapi/validate
-github.com/ssfilatov/go-swagger/httpkit to github.com/go-openapi/runtime
+github.com/joomcode/joompro-go-swagger/httpkit/validate to github.com/go-openapi/validate
+github.com/joomcode/joompro-go-swagger/httpkit to github.com/go-openapi/runtime
 github.com/naoina/denco to github.com/go-openapi/runtime/middleware/denco
-github.com/ssfilatov/go-swagger to github.com/go-openapi
+github.com/joomcode/joompro-go-swagger to github.com/go-openapi
 ```
 
 ### Using 0.5.0

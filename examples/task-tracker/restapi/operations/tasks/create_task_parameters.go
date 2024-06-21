@@ -15,7 +15,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/validate"
 
-	"github.com/ssfilatov/go-swagger/examples/task-tracker/models"
+	"github.com/joomcode/joompro-go-swagger/examples/task-tracker/models"
 )
 
 // NewCreateTaskParams creates a new CreateTaskParams object

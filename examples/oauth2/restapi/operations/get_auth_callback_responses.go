@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/ssfilatov/go-swagger/examples/oauth2/models"
+	"github.com/joomcode/joompro-go-swagger/examples/oauth2/models"
 )
 
 // GetAuthCallbackOKCode is the HTTP code returned for type GetAuthCallbackOK

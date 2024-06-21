@@ -12,7 +12,7 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/ssfilatov/go-swagger/examples/todo-list/models"
+	"github.com/joomcode/joompro-go-swagger/examples/todo-list/models"
 )
 
 // AddOneReader is a Reader for the AddOne structure.

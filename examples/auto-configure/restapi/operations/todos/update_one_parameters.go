@@ -16,7 +16,7 @@ import (
 	"github.com/go-openapi/swag"
 	"github.com/go-openapi/validate"
 
-	"github.com/ssfilatov/go-swagger/examples/auto-configure/models"
+	"github.com/joomcode/joompro-go-swagger/examples/auto-configure/models"
 )
 
 // NewUpdateOneParams creates a new UpdateOneParams object

@@ -18,7 +18,7 @@ import (
 	"errors"
 	"log"
 
-	"github.com/ssfilatov/go-swagger/generator"
+	"github.com/joomcode/joompro-go-swagger/generator"
 )
 
 type modelOptions struct {

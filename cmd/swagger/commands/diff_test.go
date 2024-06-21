@@ -10,8 +10,8 @@ import (
 
 	"testing"
 
-	"github.com/ssfilatov/go-swagger/cmd/swagger/commands/diff"
-	"github.com/ssfilatov/go-swagger/cmd/swagger/commands/internal/cmdtest"
+	"github.com/joomcode/joompro-go-swagger/cmd/swagger/commands/diff"
+	"github.com/joomcode/joompro-go-swagger/cmd/swagger/commands/internal/cmdtest"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

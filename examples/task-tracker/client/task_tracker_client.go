@@ -10,7 +10,7 @@ import (
 	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/ssfilatov/go-swagger/examples/task-tracker/client/tasks"
+	"github.com/joomcode/joompro-go-swagger/examples/task-tracker/client/tasks"
 )
 
 // Default task tracker HTTP client.

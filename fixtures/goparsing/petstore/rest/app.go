@@ -18,7 +18,7 @@ import (
 	"net/http"
 
 	"github.com/go-openapi/runtime/middleware/denco"
-	"github.com/ssfilatov/go-swagger/fixtures/goparsing/petstore/rest/handlers"
+	"github.com/joomcode/joompro-go-swagger/fixtures/goparsing/petstore/rest/handlers"
 )
 
 // ServeAPI serves this api

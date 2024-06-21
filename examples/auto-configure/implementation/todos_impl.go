@@ -7,8 +7,8 @@ import (
 
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
-	"github.com/ssfilatov/go-swagger/examples/auto-configure/models"
-	"github.com/ssfilatov/go-swagger/examples/auto-configure/restapi/operations/todos"
+	"github.com/joomcode/joompro-go-swagger/examples/auto-configure/models"
+	"github.com/joomcode/joompro-go-swagger/examples/auto-configure/restapi/operations/todos"
 )
 
 type TodosHandlerImpl struct {

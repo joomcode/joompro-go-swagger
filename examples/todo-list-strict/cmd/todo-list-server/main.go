@@ -7,8 +7,8 @@ import (
 	"os"
 
 	"github.com/go-openapi/loads"
-	"github.com/ssfilatov/go-swagger/examples/todo-list-strict/restapi"
-	"github.com/ssfilatov/go-swagger/examples/todo-list-strict/restapi/operations"
+	"github.com/joomcode/joompro-go-swagger/examples/todo-list-strict/restapi"
+	"github.com/joomcode/joompro-go-swagger/examples/todo-list-strict/restapi/operations"
 	flags "github.com/jessevdk/go-flags"
 )
 

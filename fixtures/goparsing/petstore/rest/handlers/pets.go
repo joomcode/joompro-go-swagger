@@ -19,8 +19,8 @@ import (
 	"time"
 
 	"github.com/go-openapi/runtime/middleware/denco"
-	"github.com/ssfilatov/go-swagger/fixtures/goparsing/petstore/enums"
-	"github.com/ssfilatov/go-swagger/fixtures/goparsing/petstore/models"
+	"github.com/joomcode/joompro-go-swagger/fixtures/goparsing/petstore/enums"
+	"github.com/joomcode/joompro-go-swagger/fixtures/goparsing/petstore/models"
 )
 
 // A GenericError is the default error message that is generated.

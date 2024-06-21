@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	flags "github.com/jessevdk/go-flags"
-	"github.com/ssfilatov/go-swagger/cmd/swagger/commands/generate"
+	"github.com/joomcode/joompro-go-swagger/cmd/swagger/commands/generate"
 )
 
 func TestGenerateOperation(t *testing.T) {

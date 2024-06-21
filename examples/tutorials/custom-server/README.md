@@ -22,5 +22,5 @@ $ http get :3000/hello                  # returns 'Hello, World!'
 $ http get :3000/hello name==Swagger    # returns 'Hello, Swagger!'
 ```
 
-[swagger]: https://github.com/ssfilatov/go-swagger
+[swagger]: https://github.com/joomcode/joompro-go-swagger
 [httpie]:https://httpie.org

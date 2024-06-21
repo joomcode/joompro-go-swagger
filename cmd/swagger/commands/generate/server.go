@@ -18,7 +18,7 @@ import (
 	"log"
 	"strings"
 
-	"github.com/ssfilatov/go-swagger/generator"
+	"github.com/joomcode/joompro-go-swagger/generator"
 )
 
 type serverOptions struct {

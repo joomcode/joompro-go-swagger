@@ -11,7 +11,7 @@ import (
 	"github.com/go-openapi/swag"
 	flags "github.com/jessevdk/go-flags"
 	"github.com/spf13/viper"
-	"github.com/ssfilatov/go-swagger/generator"
+	"github.com/joomcode/joompro-go-swagger/generator"
 )
 
 // FlattenCmdOptions determines options to the flatten spec preprocessing

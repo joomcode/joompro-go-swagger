@@ -14,9 +14,9 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/runtime/security"
 
-	"github.com/ssfilatov/go-swagger/examples/contributed-templates/stratoscale/restapi/operations"
-	"github.com/ssfilatov/go-swagger/examples/contributed-templates/stratoscale/restapi/operations/pet"
-	"github.com/ssfilatov/go-swagger/examples/contributed-templates/stratoscale/restapi/operations/store"
+	"github.com/joomcode/joompro-go-swagger/examples/contributed-templates/stratoscale/restapi/operations"
+	"github.com/joomcode/joompro-go-swagger/examples/contributed-templates/stratoscale/restapi/operations/pet"
+	"github.com/joomcode/joompro-go-swagger/examples/contributed-templates/stratoscale/restapi/operations/store"
 )
 
 type contextKey string

@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/ssfilatov/go-swagger/examples/tutorials/todo-list/server-2/models"
+	"github.com/joomcode/joompro-go-swagger/examples/tutorials/todo-list/server-2/models"
 )
 
 // AddOneCreatedCode is the HTTP code returned for type AddOneCreated
