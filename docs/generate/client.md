@@ -58,7 +58,7 @@ Help Options:
 
 ### Build a client
 
-There is an example client provided at: https://github.com/ssfilatov/go-swagger/tree/master/examples/todo-list/client
+There is an example client provided at: https://github.com/joomcode/joompro-go-swagger/tree/master/examples/todo-list/client
 
 To generate a client:
 

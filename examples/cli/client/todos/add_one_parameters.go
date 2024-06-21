@@ -15,7 +15,7 @@ import (
 	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/ssfilatov/go-swagger/examples/cli/models"
+	"github.com/joomcode/joompro-go-swagger/examples/cli/models"
 )
 
 // NewAddOneParams creates a new AddOneParams object,

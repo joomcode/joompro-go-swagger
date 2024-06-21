@@ -1,6 +1,6 @@
 package generate
 
-import "github.com/ssfilatov/go-swagger/generator"
+import "github.com/joomcode/joompro-go-swagger/generator"
 
 type Cli struct {
 	// generate a cli includes all client code

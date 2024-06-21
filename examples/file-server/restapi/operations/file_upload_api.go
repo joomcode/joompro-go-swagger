@@ -19,7 +19,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"github.com/ssfilatov/go-swagger/examples/file-server/restapi/operations/uploads"
+	"github.com/joomcode/joompro-go-swagger/examples/file-server/restapi/operations/uploads"
 )
 
 // NewFileUploadAPI creates a new FileUpload instance

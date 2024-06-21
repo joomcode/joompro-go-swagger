@@ -2,7 +2,7 @@ package generate
 
 import (
 	"github.com/jessevdk/go-flags"
-	"github.com/ssfilatov/go-swagger/generator"
+	"github.com/joomcode/joompro-go-swagger/generator"
 )
 
 // Markdown generates a markdown representation of the spec

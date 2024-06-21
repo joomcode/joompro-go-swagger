@@ -16,7 +16,7 @@ import (
 	"github.com/go-openapi/swag"
 	"github.com/go-openapi/validate"
 
-	"github.com/ssfilatov/go-swagger/examples/tutorials/todo-list/server-2/models"
+	"github.com/joomcode/joompro-go-swagger/examples/tutorials/todo-list/server-2/models"
 )
 
 // NewUpdateOneParams creates a new UpdateOneParams object

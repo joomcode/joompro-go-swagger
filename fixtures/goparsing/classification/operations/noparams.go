@@ -18,8 +18,8 @@ import (
 	"bytes"
 
 	"github.com/go-openapi/strfmt"
-	"github.com/ssfilatov/go-swagger/fixtures/goparsing/classification/models"
-	"github.com/ssfilatov/go-swagger/fixtures/goparsing/classification/transitive/mods"
+	"github.com/joomcode/joompro-go-swagger/fixtures/goparsing/classification/models"
+	"github.com/joomcode/joompro-go-swagger/fixtures/goparsing/classification/transitive/mods"
 )
 
 // MyFileParams contains the uploaded file data

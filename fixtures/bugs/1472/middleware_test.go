@@ -14,9 +14,9 @@ import (
 	"github.com/go-openapi/loads"
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/ssfilatov/go-swagger/fixtures/bugs/1472/restapi"
-	"github.com/ssfilatov/go-swagger/fixtures/bugs/1472/restapi/operations"
-	"github.com/ssfilatov/go-swagger/fixtures/bugs/1472/restapi/operations/ops"
+	"github.com/joomcode/joompro-go-swagger/fixtures/bugs/1472/restapi"
+	"github.com/joomcode/joompro-go-swagger/fixtures/bugs/1472/restapi/operations"
+	"github.com/joomcode/joompro-go-swagger/fixtures/bugs/1472/restapi/operations/ops"
 )
 
 type User struct {

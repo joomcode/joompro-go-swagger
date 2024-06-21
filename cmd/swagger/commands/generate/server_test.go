@@ -10,7 +10,7 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	"github.com/jessevdk/go-flags"
-	"github.com/ssfilatov/go-swagger/cmd/swagger/commands/generate"
+	"github.com/joomcode/joompro-go-swagger/cmd/swagger/commands/generate"
 )
 
 func TestGenerateServer(t *testing.T) {
@@ -102,7 +102,7 @@ func TestRegressionIssue2601(t *testing.T) {
 
 			// Error was coming from these two being set together
 			m.Shared.StrictResponders = true
-			m.ImplementationPackage = "github.com/ssfilatov/go-swagger/fixtures/codegen/impl"
+			m.ImplementationPackage = "github.com/joomcode/joompro-go-swagger/fixtures/codegen/impl"
 
 			// Load new copy of template
 			m.Shared.AllowTemplateOverride = true

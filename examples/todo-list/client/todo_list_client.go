@@ -10,7 +10,7 @@ import (
 	httptransport "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/ssfilatov/go-swagger/examples/todo-list/client/todos"
+	"github.com/joomcode/joompro-go-swagger/examples/todo-list/client/todos"
 )
 
 // Default todo list HTTP client.

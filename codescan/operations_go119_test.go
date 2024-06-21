@@ -11,7 +11,7 @@ import (
 func TestIndentedYAMLBlock(t *testing.T) {
 	sctx, err := newScanCtx(&Options{
 		Packages: []string{
-			"github.com/ssfilatov/go-swagger/fixtures/goparsing/go119",
+			"github.com/joomcode/joompro-go-swagger/fixtures/goparsing/go119",
 		},
 	})
 	require.NoError(t, err)

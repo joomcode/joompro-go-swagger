@@ -643,7 +643,7 @@ func TestDefaultImports(t *testing.T) {
 			Title: "defaults",
 			Opts:  &GenOpts{},
 			Expected: map[string]string{
-				"models": "github.com/ssfilatov/go-swagger/generator/models",
+				"models": "github.com/joomcode/joompro-go-swagger/generator/models",
 			},
 		},
 		{
@@ -654,8 +654,8 @@ func TestDefaultImports(t *testing.T) {
 				},
 			},
 			Expected: map[string]string{
-				"ext":    "github.com/ssfilatov/go-swagger/generator/ext",
-				"models": "github.com/ssfilatov/go-swagger/generator/models",
+				"ext":    "github.com/joomcode/joompro-go-swagger/generator/ext",
+				"models": "github.com/joomcode/joompro-go-swagger/generator/models",
 			},
 		},
 		{
@@ -667,7 +667,7 @@ func TestDefaultImports(t *testing.T) {
 			},
 			Expected: map[string]string{
 				"identity": "github.com/myproject/identity",
-				"models":   "github.com/ssfilatov/go-swagger/generator/models",
+				"models":   "github.com/joomcode/joompro-go-swagger/generator/models",
 			},
 		},
 		{
@@ -679,7 +679,7 @@ func TestDefaultImports(t *testing.T) {
 			},
 			Expected: map[string]string{
 				"auth":   "github.com/myproject/middleware",
-				"models": "github.com/ssfilatov/go-swagger/generator/models",
+				"models": "github.com/joomcode/joompro-go-swagger/generator/models",
 			},
 		},
 		{
@@ -691,7 +691,7 @@ func TestDefaultImports(t *testing.T) {
 			},
 			Expected: map[string]string{
 				"auth":   "github.com/myproject/principal",
-				"models": "github.com/ssfilatov/go-swagger/generator/models",
+				"models": "github.com/joomcode/joompro-go-swagger/generator/models",
 			},
 		},
 		{
@@ -702,7 +702,7 @@ func TestDefaultImports(t *testing.T) {
 				},
 			},
 			Expected: map[string]string{
-				"bespoke": "github.com/ssfilatov/go-swagger/generator/target/bespoke",
+				"bespoke": "github.com/joomcode/joompro-go-swagger/generator/target/bespoke",
 			},
 		},
 		{
@@ -726,8 +726,8 @@ func TestDefaultImports(t *testing.T) {
 				},
 			},
 			Expected: map[string]string{
-				"bespoke": "github.com/ssfilatov/go-swagger/generator/target/bespoke",
-				"auth":    "github.com/ssfilatov/go-swagger/generator/auth",
+				"bespoke": "github.com/joomcode/joompro-go-swagger/generator/target/bespoke",
+				"auth":    "github.com/joomcode/joompro-go-swagger/generator/auth",
 			},
 		},
 		{
@@ -739,7 +739,7 @@ func TestDefaultImports(t *testing.T) {
 				},
 			},
 			Expected: map[string]string{
-				"bespoke": "github.com/ssfilatov/go-swagger/generator/target/bespoke",
+				"bespoke": "github.com/joomcode/joompro-go-swagger/generator/target/bespoke",
 			},
 		},
 		{
@@ -751,7 +751,7 @@ func TestDefaultImports(t *testing.T) {
 				},
 			},
 			Expected: map[string]string{
-				"bespoke": "github.com/ssfilatov/go-swagger/generator/target/bespoke",
+				"bespoke": "github.com/joomcode/joompro-go-swagger/generator/target/bespoke",
 			},
 		},
 		{
@@ -764,7 +764,7 @@ func TestDefaultImports(t *testing.T) {
 				},
 			},
 			Expected: map[string]string{
-				"models": "github.com/ssfilatov/go-swagger/generator/target/models",
+				"models": "github.com/joomcode/joompro-go-swagger/generator/target/models",
 				"auth":   "target/auth",
 			},
 		},

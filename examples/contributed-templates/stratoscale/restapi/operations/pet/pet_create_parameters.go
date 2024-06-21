@@ -15,7 +15,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/validate"
 
-	"github.com/ssfilatov/go-swagger/examples/contributed-templates/stratoscale/models"
+	"github.com/joomcode/joompro-go-swagger/examples/contributed-templates/stratoscale/models"
 )
 
 // NewPetCreateParams creates a new PetCreateParams object

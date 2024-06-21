@@ -13,7 +13,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/ssfilatov/go-swagger/examples/todo-list-strict/models"
+	"github.com/joomcode/joompro-go-swagger/examples/todo-list-strict/models"
 )
 
 // NewUpdateOneParams creates a new UpdateOneParams object

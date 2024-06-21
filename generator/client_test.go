@@ -229,7 +229,7 @@ func TestClient(t *testing.T) {
 
 				// assert client import, with deconfliction
 				code := string(buf)
-				baseImport := `github.com/ssfilatov/go-swagger/generator/swagger_nogo\d+/packages_mangling/client`
+				baseImport := `github.com/joomcode/joompro-go-swagger/generator/swagger_nogo\d+/packages_mangling/client`
 				assertImports(t, baseImport, code)
 
 				assertInCode(t, `cli.Strfmt = strfmtops.New(transport, formats)`, code)

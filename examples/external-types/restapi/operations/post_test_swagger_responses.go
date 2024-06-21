@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	custom "github.com/ssfilatov/go-swagger/examples/external-types/fred"
+	custom "github.com/joomcode/joompro-go-swagger/examples/external-types/fred"
 )
 
 /*

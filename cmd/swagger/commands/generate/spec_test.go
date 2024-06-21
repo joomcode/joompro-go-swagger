@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/jessevdk/go-flags"
-	"github.com/ssfilatov/go-swagger/scan"
+	"github.com/joomcode/joompro-go-swagger/scan"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/yaml.v3"
 )

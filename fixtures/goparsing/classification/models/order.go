@@ -17,7 +17,7 @@
 
 package models
 
-import "github.com/ssfilatov/go-swagger/fixtures/goparsing/classification/transitive/mods"
+import "github.com/joomcode/joompro-go-swagger/fixtures/goparsing/classification/transitive/mods"
 
 // # StoreOrder represents an order in this application.
 //

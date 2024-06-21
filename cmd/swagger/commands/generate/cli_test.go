@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	flags "github.com/jessevdk/go-flags"
-	"github.com/ssfilatov/go-swagger/cmd/swagger/commands/generate"
+	"github.com/joomcode/joompro-go-swagger/cmd/swagger/commands/generate"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

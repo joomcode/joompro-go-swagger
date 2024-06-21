@@ -9,8 +9,8 @@ import (
 	"time"
 
 	"github.com/go-openapi/loads"
-	"github.com/ssfilatov/go-swagger/fixtures/bugs/1943/restapi"
-	"github.com/ssfilatov/go-swagger/fixtures/bugs/1943/restapi/operations"
+	"github.com/joomcode/joompro-go-swagger/fixtures/bugs/1943/restapi"
+	"github.com/joomcode/joompro-go-swagger/fixtures/bugs/1943/restapi/operations"
 )
 
 func Test_DataRace(t *testing.T) {

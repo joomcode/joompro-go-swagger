@@ -8,7 +8,7 @@ package cli
 import (
 	"fmt"
 
-	"github.com/ssfilatov/go-swagger/examples/cli/models"
+	"github.com/joomcode/joompro-go-swagger/examples/cli/models"
 	"github.com/spf13/cobra"
 )
 

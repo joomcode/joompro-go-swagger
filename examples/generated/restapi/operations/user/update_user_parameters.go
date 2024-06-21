@@ -15,7 +15,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/validate"
 
-	"github.com/ssfilatov/go-swagger/examples/generated/models"
+	"github.com/joomcode/joompro-go-swagger/examples/generated/models"
 )
 
 // NewUpdateUserParams creates a new UpdateUserParams object

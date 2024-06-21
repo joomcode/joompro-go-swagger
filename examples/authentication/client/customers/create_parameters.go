@@ -15,7 +15,7 @@ import (
 	cr "github.com/go-openapi/runtime/client"
 	"github.com/go-openapi/strfmt"
 
-	"github.com/ssfilatov/go-swagger/examples/authentication/models"
+	"github.com/joomcode/joompro-go-swagger/examples/authentication/models"
 )
 
 // NewCreateParams creates a new CreateParams object,

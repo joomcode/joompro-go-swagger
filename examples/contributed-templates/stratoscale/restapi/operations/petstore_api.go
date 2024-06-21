@@ -19,8 +19,8 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"github.com/ssfilatov/go-swagger/examples/contributed-templates/stratoscale/restapi/operations/pet"
-	"github.com/ssfilatov/go-swagger/examples/contributed-templates/stratoscale/restapi/operations/store"
+	"github.com/joomcode/joompro-go-swagger/examples/contributed-templates/stratoscale/restapi/operations/pet"
+	"github.com/joomcode/joompro-go-swagger/examples/contributed-templates/stratoscale/restapi/operations/store"
 )
 
 // NewPetstoreAPI creates a new Petstore instance

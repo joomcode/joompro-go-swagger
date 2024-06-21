@@ -18,7 +18,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/ssfilatov/go-swagger/examples/2.0/petstore/server/api"
+	"github.com/joomcode/joompro-go-swagger/examples/2.0/petstore/server/api"
 )
 
 func main() {

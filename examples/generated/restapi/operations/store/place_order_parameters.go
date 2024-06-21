@@ -14,7 +14,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/validate"
 
-	"github.com/ssfilatov/go-swagger/examples/generated/models"
+	"github.com/joomcode/joompro-go-swagger/examples/generated/models"
 )
 
 // NewPlaceOrderParams creates a new PlaceOrderParams object

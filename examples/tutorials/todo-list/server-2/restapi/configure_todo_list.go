@@ -10,8 +10,8 @@ import (
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 
-	"github.com/ssfilatov/go-swagger/examples/tutorials/todo-list/server-2/restapi/operations"
-	"github.com/ssfilatov/go-swagger/examples/tutorials/todo-list/server-2/restapi/operations/todos"
+	"github.com/joomcode/joompro-go-swagger/examples/tutorials/todo-list/server-2/restapi/operations"
+	"github.com/joomcode/joompro-go-swagger/examples/tutorials/todo-list/server-2/restapi/operations/todos"
 )
 
 //go:generate swagger generate server --target ../../server-2 --name TodoList --spec ../swagger.yml --principal interface{}

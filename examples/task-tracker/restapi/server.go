@@ -24,7 +24,7 @@ import (
 	flags "github.com/jessevdk/go-flags"
 	"golang.org/x/net/netutil"
 
-	"github.com/ssfilatov/go-swagger/examples/task-tracker/restapi/operations"
+	"github.com/joomcode/joompro-go-swagger/examples/task-tracker/restapi/operations"
 )
 
 const (

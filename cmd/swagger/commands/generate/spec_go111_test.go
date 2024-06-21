@@ -8,7 +8,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/ssfilatov/go-swagger/codescan"
+	"github.com/joomcode/joompro-go-swagger/codescan"
 
 	"github.com/jessevdk/go-flags"
 	"github.com/stretchr/testify/assert"

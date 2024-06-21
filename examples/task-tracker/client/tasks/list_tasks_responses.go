@@ -14,7 +14,7 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"github.com/ssfilatov/go-swagger/examples/task-tracker/models"
+	"github.com/joomcode/joompro-go-swagger/examples/task-tracker/models"
 )
 
 // ListTasksReader is a Reader for the ListTasks structure.

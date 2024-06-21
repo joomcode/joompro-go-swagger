@@ -17,7 +17,7 @@ import (
 	"github.com/go-openapi/swag"
 	"github.com/go-openapi/validate"
 
-	"github.com/ssfilatov/go-swagger/examples/task-tracker/models"
+	"github.com/joomcode/joompro-go-swagger/examples/task-tracker/models"
 )
 
 // NewUpdateTaskParams creates a new UpdateTaskParams object

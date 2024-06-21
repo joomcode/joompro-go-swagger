@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"github.com/ssfilatov/go-swagger/examples/contributed-templates/stratoscale/models"
+	"github.com/joomcode/joompro-go-swagger/examples/contributed-templates/stratoscale/models"
 )
 
 // PetUpdateCreatedCode is the HTTP code returned for type PetUpdateCreated
