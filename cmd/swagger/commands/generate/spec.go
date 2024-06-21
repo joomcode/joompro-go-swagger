@@ -25,8 +25,8 @@ import (
 
 	"github.com/go-openapi/loads"
 	"github.com/go-openapi/spec"
-	"github.com/go-swagger/go-swagger/scan"
 	"github.com/jessevdk/go-flags"
+	"github.com/ssfilatov/go-swagger/scan"
 	"gopkg.in/yaml.v3"
 )
 

@@ -5,7 +5,7 @@ installation, see [the prerequisites](https://goswagger.io/generate/requirements
 
 ## Installing from binary distributions
 
-go-swagger releases are distributed as binaries that are built from signed tags. It is published [as github release](https://github.com/go-swagger/go-swagger/tags),
+go-swagger releases are distributed as binaries that are built from signed tags. It is published [as github release](https://github.com/ssfilatov/go-swagger/tags),
 rpm, deb and docker image.
 
 ### Docker image [![Docker Repository on Quay](https://quay.io/repository/goswagger/swagger/status "Docker Repository on Quay")](https://quay.io/repository/goswagger/swagger)
@@ -74,7 +74,7 @@ brew install go-swagger
 ### Static binary
 
 You can download a binary for your platform from github:
-<https://github.com/go-swagger/go-swagger/releases/latest>
+<https://github.com/ssfilatov/go-swagger/releases/latest>
 
 ```
 download_url=$(curl -s https://api.github.com/repos/go-swagger/go-swagger/releases/latest | \
@@ -91,8 +91,8 @@ without sudo:
 
 ```sh
 apt update
-apt install -y apt-transport-https gnupg curl
-curl -1sLf 'https://dl.cloudsmith.io/public/go-swagger/go-swagger/gpg.2F8CB673971B5C9E.key' | apt-key add -
+apt install -y apt-transport-https gnupg curl debian-keyring debian-archive-keyring
+curl -1sLf 'https://dl.cloudsmith.io/public/go-swagger/go-swagger/gpg.2F8CB673971B5C9E.key' | gpg --dearmor -o /usr/share/keyrings/go-swagger-go-swagger-archive-keyring.gpg
 curl -1sLf 'https://dl.cloudsmith.io/public/go-swagger/go-swagger/config.deb.txt?distro=debian&codename=any-version' > /etc/apt/sources.list.d/go-swagger-go-swagger.list
 apt update 
 apt install swagger
@@ -102,8 +102,8 @@ with sudo:
 
 ```sh
 sudo apt update
-sudo apt install -y apt-transport-https gnupg curl
-curl -1sLf 'https://dl.cloudsmith.io/public/go-swagger/go-swagger/gpg.2F8CB673971B5C9E.key' | sudo apt-key add -
+sudo apt install -y apt-transport-https gnupg curl debian-keyring debian-archive-keyring
+curl -1sLf 'https://dl.cloudsmith.io/public/go-swagger/go-swagger/gpg.2F8CB673971B5C9E.key' | sudo gpg --dearmor -o /usr/share/keyrings/go-swagger-go-swagger-archive-keyring.gpg
 curl -1sLf 'https://dl.cloudsmith.io/public/go-swagger/go-swagger/config.deb.txt?distro=debian&codename=any-version' | sudo tee /etc/apt/sources.list.d/go-swagger-go-swagger.list
 sudo apt update 
 sudo apt install swagger
@@ -128,7 +128,7 @@ Install or update from current source master:
 
 ```
 dir=$(mktemp -d) 
-git clone https://github.com/go-swagger/go-swagger "$dir" 
+git clone https://github.com/ssfilatov/go-swagger "$dir" 
 cd "$dir"
 go install ./cmd/swagger
 ```
@@ -137,15 +137,15 @@ To install a specific version from source an appropriate tag needs to be checked
 
 ```
 dir=$(mktemp -d)
-git clone https://github.com/go-swagger/go-swagger "$dir" 
+git clone https://github.com/ssfilatov/go-swagger "$dir" 
 cd "$dir"
 git checkout v0.25.0
-go install -ldflags "-X github.com/go-swagger/go-swagger/cmd/swagger/commands.Version=$(git describe --tags) -X github.com/go-swagger/go-swagger/cmd/swagger/commands.Commit=$(git rev-parse HEAD)" ./cmd/swagger
+go install -ldflags "-X github.com/ssfilatov/go-swagger/cmd/swagger/commands.Version=$(git describe --tags) -X github.com/ssfilatov/go-swagger/cmd/swagger/commands.Commit=$(git rev-parse HEAD)" ./cmd/swagger
 ```
 
 You are welcome to clone this repo and start contributing:
 ```
-git clone https://github.com/go-swagger/go-swagger
+git clone https://github.com/ssfilatov/go-swagger
 ```
 
 > **NOTE**: go-swagger works on *nix as well as Windows OS 

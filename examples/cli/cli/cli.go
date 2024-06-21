@@ -12,7 +12,7 @@ import (
 	"path"
 	"path/filepath"
 
-	"github.com/go-swagger/go-swagger/examples/cli/client"
+	"github.com/ssfilatov/go-swagger/examples/cli/client"
 
 	"github.com/go-openapi/runtime"
 	httptransport "github.com/go-openapi/runtime/client"
