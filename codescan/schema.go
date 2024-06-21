@@ -155,15 +155,27 @@ func (s *schemaBuilder) Build(definitions map[string]spec.Schema) error {
 	s.inferNames()
 
 	schema := definitions[s.Name]
-	err := s.buildFromDecl(s.decl, &schema)
+	existingPackageName, _ := schema.VendorExtensible.Extensions.GetString("x-go-package")
+	err, ignore := s.buildFromDecl(s.decl, &schema)
 	if err != nil {
 		return err
 	}
+
+	if existing, ok := definitions[s.Name]; ok && !ignore && !reflect.DeepEqual(schema.Type, existing.Type) {
+		packageName, _ := schema.VendorExtensible.Extensions.GetString("x-go-package")
+		return fmt.Errorf(
+			"model name %s already exists. Use swagger:model comment for alias. Conflict packages: \n%s\n%s",
+			s.Name,
+			packageName,
+			existingPackageName,
+		)
+	}
+
 	definitions[s.Name] = schema
 	return nil
 }
 
-func (s *schemaBuilder) buildFromDecl(decl *entityDecl, schema *spec.Schema) error {
+func (s *schemaBuilder) buildFromDecl(decl *entityDecl, schema *spec.Schema) (error, bool) {
 	// analyze doc comment for the model
 	sp := new(sectionedParser)
 	sp.setTitle = func(lines []string) { schema.Title = joinDropLast(lines) }
@@ -175,12 +187,12 @@ func (s *schemaBuilder) buildFromDecl(decl *entityDecl, schema *spec.Schema) err
 		}
 	}
 	if err := sp.Parse(s.decl.Comments); err != nil {
-		return err
+		return err, false
 	}
 
 	// if the type is marked to ignore, just return
 	if sp.ignored {
-		return nil
+		return nil, true
 	}
 
 	switch tpe := s.decl.Type.Obj().Type().(type) {
@@ -188,11 +200,11 @@ func (s *schemaBuilder) buildFromDecl(decl *entityDecl, schema *spec.Schema) err
 		debugLog("basic: %v", tpe.Name())
 	case *types.Struct:
 		if err := s.buildFromStruct(s.decl, tpe, schema, make(map[string]string)); err != nil {
-			return err
+			return err, false
 		}
 	case *types.Interface:
 		if err := s.buildFromInterface(s.decl, tpe, schema, make(map[string]string)); err != nil {
-			return err
+			return err, false
 		}
 	case *types.Array:
 		debugLog("array: %v -> %v", s.decl.Ident.Name, tpe.Elem().String())
@@ -206,7 +218,7 @@ func (s *schemaBuilder) buildFromDecl(decl *entityDecl, schema *spec.Schema) err
 			debugLog("got the named type object: %s.%s | isAlias: %t | exported: %t", o.Pkg().Path(), o.Name(), o.IsAlias(), o.Exported())
 			if o.Pkg().Name() == "time" && o.Name() == "Time" {
 				schema.Typed("string", "date-time")
-				return nil
+				return nil, true
 			}
 
 			ps := schemaTypable{schema, 0}
@@ -217,7 +229,7 @@ func (s *schemaBuilder) buildFromDecl(decl *entityDecl, schema *spec.Schema) err
 				}
 				if ti.IsType() {
 					if err := s.buildFromType(ti.Type, ps); err != nil {
-						return err
+						return err, false
 					}
 					break
 				}
@@ -225,7 +237,7 @@ func (s *schemaBuilder) buildFromDecl(decl *entityDecl, schema *spec.Schema) err
 		}
 	default:
 		log.Printf("WARNING: Missing parser for a %T, skipping model: %s\n", tpe, s.Name)
-		return nil
+		return nil, true
 	}
 
 	if schema.Ref.String() == "" {
@@ -234,7 +246,7 @@ func (s *schemaBuilder) buildFromDecl(decl *entityDecl, schema *spec.Schema) err
 		}
 		addExtension(&schema.VendorExtensible, "x-go-package", s.decl.Type.Obj().Pkg().Path())
 	}
-	return nil
+	return nil, false
 }
 
 func (s *schemaBuilder) buildFromTextMarshal(tpe types.Type, tgt swaggerTypable) error {
